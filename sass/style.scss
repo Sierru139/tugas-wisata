@@ -136,10 +136,8 @@ h2 {
         }
         #resNav {
             display: flex;
-            border: 1px solid white;
             color: white;
             border-radius: 10px;
-            padding: 1rem;
         }
         #resMenu {
             display: none;
@@ -173,16 +171,16 @@ h2 {
             }
             display: flex;
             align-items: center;
-        }
-
-        
+        }   
     }
-
 }
 
 // BERANDA
 .home-image {
     height: 90vh;
+    @media (max-width: $phone) {
+        height: 40vh;
+    }
     position: relative;
     background-image: url('../assets/imgs/tempat/kapopposang-drone-view.png');
     background-position: right;

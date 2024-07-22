@@ -112,10 +112,8 @@ h2 {
 }
 .nav-stick div:nth-child(2) #resNav {
   display: flex;
-  border: 1px solid white;
   color: white;
   border-radius: 10px;
-  padding: 1rem;
 }
 .nav-stick div:nth-child(2) #resMenu {
   display: none;
@@ -158,6 +156,11 @@ h2 {
   background-position: right;
   background-size: cover;
   padding-top: 2px;
+}
+@media (max-width: 420px) {
+  .home-image {
+    height: 40vh;
+  }
 }
 .home-image .home-title {
   max-width: 700px;
