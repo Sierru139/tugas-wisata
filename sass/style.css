@@ -6,6 +6,10 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #F9E8D9;
+  background-size: auto;
+  z-index: 0;
+  /* background-repeat: repeat-y; */
 }
 
 a {
@@ -14,6 +18,180 @@ a {
 
 h1, h2, h3 {
   font-family: "Playfair Display", serif;
+}
+
+h2 {
+  -webkit-text-stroke: 0.4px white;
+  color: #527853;
+}
+
+.nav-stuck {
+  background-color: #EE6421;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 8rem;
+}
+@media (max-width: 880px) {
+  .nav-stuck {
+    padding: 0.8rem 2rem;
+  }
+}
+@media (max-width: 580px) {
+  .nav-stuck {
+    justify-content: center;
+  }
+}
+.nav-stuck div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-stuck div:nth-child(1) h2 {
+  margin-left: 0.8rem;
+  font-size: 2.3rem;
+}
+@media (max-width: 420px) {
+  .nav-stuck div:nth-child(1) h2 {
+    font-size: 1.8rem;
+  }
+}
+.nav-stuck div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 0 0.75rem;
+}
+@media (max-width: 580px) {
+  .nav-stuck div:nth-child(2) {
+    display: none;
+  }
+}
+
+.nav-stick {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 50px;
+  z-index: 999;
+  padding: 0.5rem 8rem;
+  background-color: #F7A240;
+}
+@media (max-width: 880px) {
+  .nav-stick {
+    padding: 0.5rem 2rem;
+  }
+}
+.nav-stick div:nth-child(1) {
+  display: flex;
+}
+@media (max-width: 580px) {
+  .nav-stick div:nth-child(1) {
+    display: none;
+  }
+}
+.nav-stick div:nth-child(2) {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 580px) {
+  .nav-stick div:nth-child(2) {
+    display: flex;
+  }
+}
+.nav-stick div:nth-child(2) .navIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 0.5rem;
+}
+.nav-stick div:nth-child(2) .navIcon a {
+  margin: 0;
+}
+.nav-stick div:nth-child(2) #resNav {
+  display: flex;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.nav-stick div:nth-child(2) #resMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 2rem;
+  background-color: #F28545;
+}
+.nav-stick div:nth-child(2) #resMenu #resNavClose {
+  position: absolute;
+  display: inline;
+  right: 1rem;
+}
+.nav-stick div:nth-child(2) #resMenu .menus {
+  display: block;
+}
+.nav-stick div:nth-child(2) #resMenu .menus a {
+  padding: 1rem 0;
+  border-bottom: 1px solid white;
+}
+.nav-stick div {
+  align-items: center;
+}
+.nav-stick div a {
+  color: white;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+.nav-stick div a img {
+  margin-right: 0.5rem;
+}
+
+.home-image {
+  height: 90vh;
+  position: relative;
+  background-image: url("../assets/imgs/tempat/kapopposang-drone-view.png");
+  background-position: right;
+  background-size: cover;
+  padding-top: 2px;
+}
+.home-image .home-title {
+  max-width: 700px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-image .home-title h1 {
+  color: white;
+  font-size: 4rem;
+  line-height: 110%;
+}
+@media (max-width: 880px) {
+  .home-image .home-title h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .home-image .home-title h1 {
+    font-size: 2rem;
+  }
+}
+.home-image .home-title a {
+  padding: 0.5rem 2rem;
+  color: white;
+  border-radius: 40px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #527853;
 }
 
 .place .place-container {
@@ -35,11 +213,19 @@ h1, h2, h3 {
   align-items: center;
   flex-direction: column;
 }
-.place .place-container .places-header h1 {
-  font-size: 2.5rem;
+.place .place-container .places-header h2 {
+  font-size: 2.2rem;
 }
 .place .place-container .places-header p {
   font-size: 1.2rem;
+}
+@media (max-width: 420px) {
+  .place .place-container .places-header h2 {
+    font-size: 2rem;
+  }
+  .place .place-container .places-header p {
+    font-size: 0.8rem;
+  }
 }
 .place .place-container .places-images {
   height: 680px;
@@ -48,6 +234,16 @@ h1, h2, h3 {
   border-radius: 10px;
   overflow: hidden;
   /* THE PLACES */
+}
+@media (max-width: 880px) {
+  .place .place-container .places-images {
+    height: 480px;
+  }
+}
+@media (max-width: 420px) {
+  .place .place-container .places-images {
+    flex-direction: column;
+  }
 }
 .place .place-container .places-images .places {
   position: relative;
@@ -81,6 +277,9 @@ h1, h2, h3 {
   transition: 0.5s;
   text-shadow: 0px 0px 5px black;
 }
+.place .place-container .places-images .places .places-exp h3 {
+  font-size: 1.5rem;
+}
 .place .place-container .places-images .places .images {
   z-index: -10;
   position: absolute;
@@ -107,11 +306,19 @@ h1, h2, h3 {
   padding: 1rem;
   align-items: center;
 }
-.benefit .benefit-header h1 {
-  font-size: 2.5rem;
+.benefit .benefit-header h2 {
+  font-size: 2.2rem;
 }
 .benefit .benefit-header p {
   font-size: 1.4rem;
+}
+@media (max-width: 420px) {
+  .benefit .benefit-header h2 {
+    font-size: 2rem;
+  }
+  .benefit .benefit-header p {
+    font-size: 1rem;
+  }
 }
 .benefit .benefit-container {
   padding: 1rem 2rem;
@@ -133,6 +340,11 @@ h1, h2, h3 {
   /* width: 400px; */
   height: 660px;
 }
+@media (max-width: 420px) {
+  .benefit .benefit-container .benefit-cards .cards {
+    height: 460px;
+  }
+}
 .benefit .benefit-container .benefit-cards .cards:nth-child(even) {
   justify-content: end;
 }
@@ -140,7 +352,7 @@ h1, h2, h3 {
   position: relative;
   height: 70%;
 }
-.benefit .benefit-container .benefit-cards .cards .card-image h2 {
+.benefit .benefit-container .benefit-cards .cards .card-image h3 {
   position: absolute;
   display: inline-block;
   bottom: 1rem;
@@ -148,7 +360,7 @@ h1, h2, h3 {
   font-size: 2rem;
   color: #D6CECB;
 }
-.benefit .benefit-container .benefit-cards .cards .card-image h2 a {
+.benefit .benefit-container .benefit-cards .cards .card-image h3 a {
   color: inherit;
 }
 .benefit .benefit-container .benefit-cards .cards .card-image img {
@@ -180,23 +392,45 @@ h1, h2, h3 {
   padding: 0.5rem 1rem;
 }
 
-@media (max-width: 880px) {
-  .place .place-container .places-header h1 {
-    font-size: 2rem;
+.goDown {
+  animation: navDown 0.5s ease;
+}
+
+@keyframes navDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
   }
-  .place .place-container .places-header p {
-    font-size: 1rem;
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  .place .place-container .places-images {
-    flex-direction: column;
+}
+.resGoDown {
+  animation: navRespoLeft 0.3s linear;
+}
+
+@keyframes navRespoLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  .benefit .benefit-header h1 {
-    font-size: 2rem;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  .benefit .benefit-header p {
-    font-size: 1rem;
+}
+.nav-close {
+  animation: nav-close 1s ease;
+}
+
+@keyframes nav-close {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  .benefit .benefit-container .benefit-cards .cards {
-    height: 460px;
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }/*# sourceMappingURL=style.css.map */
