@@ -8,7 +8,9 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #F9E8D9;
   background-size: auto;
-  z-index: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   /* background-repeat: repeat-y; */
 }
 
