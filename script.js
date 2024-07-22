@@ -40,3 +40,35 @@ respoNavClose.addEventListener('click', function() {
         respoMenu.style.display = "none"
     }, 800);
 })
+
+const FSImg = document.querySelectorAll('#fullScreen');
+function fullScreenImg() {
+    for (let i = 0; i < FSImg.length; i++) {
+        if (FSImg[i].src.includes("maximize.png")) {
+            FSImg[i].src = "assets/imgs/logo-icon/minimize.png"
+        } else {
+            FSImg[i].src = "assets/imgs/logo-icon/maximize.png"
+        }
+    }
+}
+
+function toggleFullScreen() {
+    if ((document.fullScreenElement && document.fullScreenElement !== null) || 
+        (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+        if (document.documentElement.requestFullScreen) {  
+        document.documentElement.requestFullScreen();  
+        } else if (document.documentElement.mozRequestFullScreen) {  
+        document.documentElement.mozRequestFullScreen();  
+        } else if (document.documentElement.webkitRequestFullScreen) {  
+        document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+        }  
+    } else {
+        if (document.cancelFullScreen) {  
+        document.cancelFullScreen();  
+        } else if (document.mozCancelFullScreen) {  
+        document.mozCancelFullScreen();  
+        } else if (document.webkitCancelFullScreen) {  
+        document.webkitCancelFullScreen();  
+        }  
+    }  
+}

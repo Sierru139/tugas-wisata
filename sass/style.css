@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #F9E8D9;
@@ -51,7 +55,7 @@ h2 {
   align-items: center;
 }
 .nav-stuck div:nth-child(1) h2 {
-  margin-left: 0.8rem;
+  -webkit-text-stroke: 1px white;
   font-size: 2.3rem;
 }
 @media (max-width: 420px) {
@@ -75,7 +79,6 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-  min-height: 50px;
   z-index: 999;
   padding: 0.5rem 8rem;
   background-color: #F7A240;
@@ -96,6 +99,7 @@ h2 {
 .nav-stick div:nth-child(2) {
   display: none;
   align-items: center;
+  height: 100%;
   justify-content: space-between;
 }
 @media (max-width: 580px) {
@@ -152,22 +156,29 @@ h2 {
 }
 
 .home-image {
-  height: 90vh;
   position: relative;
-  background-image: url("../assets/imgs/tempat/kapopposang-drone-view.png");
-  background-position: right;
-  background-size: cover;
   padding-top: 2px;
 }
-@media (max-width: 420px) {
-  .home-image {
-    height: 40vh;
-  }
+.home-image .image-home {
+  width: 100%;
+}
+.home-image .image-home img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
 }
 .home-image .home-title {
   max-width: 700px;
-  height: 100%;
+  top: 0;
   margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -181,12 +192,12 @@ h2 {
 }
 @media (max-width: 880px) {
   .home-image .home-title h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 420px) {
   .home-image .home-title h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 .home-image .home-title a {
@@ -197,6 +208,13 @@ h2 {
   display: inline-block;
   margin-top: 1.5rem;
   background-color: #527853;
+}
+@media (max-width: 420px) {
+  .home-image .home-title a {
+    margin-top: 1rem;
+    padding: 0.25rem 1rem;
+    font-size: 0.5rem;
+  }
 }
 
 .place .place-container {

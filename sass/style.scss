@@ -26,6 +26,8 @@ $tangerine-800 : #974115;
 $tangerine-900 : #7A3714;
 $tangerine-950 : #421A08;
 
+$moca-100 : #F9E8D9;
+
 $tablet: 880px;
 $phone-md: 580px;
 $phone: 420px;
@@ -35,9 +37,14 @@ $phone: 420px;
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F9E8D9;
+    background-color: $moca-100;
     background-size: auto;
     // z-index: 0;
     user-select: none;
@@ -81,7 +88,7 @@ h2 {
         justify-content: center;
         align-items: center;
         h2 {
-            margin-left: .8rem;
+            -webkit-text-stroke: 1px white;
             font-size: 2.3rem;
             @media (max-width: $phone) {
                 font-size: 1.8rem;
@@ -104,7 +111,6 @@ h2 {
     top: 0;
     left: 0;
     right: 0;
-    min-height: 50px;
     z-index: 999;
     padding: .5rem 8rem;
     background-color: $tangerine-400;
@@ -122,6 +128,7 @@ h2 {
     div:nth-child(2){
         display: none;
         align-items: center;
+        height: 100%;
         justify-content: space-between;
         @media (max-width: $phone-md) {
             display: flex;
@@ -178,21 +185,30 @@ h2 {
 
 // BERANDA
 .home-image {
-    height: 90vh;
-    @media (max-width: $phone) {
-        height: 40vh;
-    }
+    
     position: relative;
-    background-image: url('../assets/imgs/tempat/kapopposang-drone-view.png');
-    background-position: right;
-    background-size: cover;
     padding-top: 2px;
     
+    .image-home {
+        width: 100%;
+        // z-index: -1;
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+        }
+    }
     .home-title {
         // z-index: 1;
         max-width: 700px;
-        height: 100%;
+        top: 0;
         margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -203,10 +219,10 @@ h2 {
             font-size: 4rem;
             line-height:  110%;
             @media (max-width: $tablet) {
-                font-size: 3.5rem;
+                font-size: 2.5rem;
             }
             @media (max-width: $phone) {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
         a {
@@ -216,6 +232,11 @@ h2 {
             font-weight: 600;
             display: inline-block;
             margin-top: 1.5rem;
+            @media (max-width: $phone) {
+                margin-top: 1rem;
+                padding: .25rem 1rem;
+                font-size: .5rem;
+            }
             background-color: #527853;
         }
     }

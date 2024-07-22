@@ -19,7 +19,7 @@
         </div>
         <div>
             <a href="#"><img src="assets/imgs/logo-icon/search.png" width="30px" alt=""></a>
-            <a href="#"><img src="assets/imgs/logo-icon/maximize.png" width="30px" alt=""></a>
+            <a onclick="fullScreenImg()" href="#"><img onclick="toggleFullScreen()" id="fullScreen"  src=" assets/imgs/logo-icon/maximize.png" width="30px" alt=""></a>
             <a href="#"><img src="assets/imgs/logo-icon/indonesia-flag.png" width="30px" alt=""></a>
         </div>
     </nav>
@@ -27,16 +27,16 @@
 
     <nav class="nav-stick">
         <div>
-            <a href="#"><img src="assets/imgs/logo-icon/home.png" width="30px" alt=""> Beranda</a>
+            <a href="#home"><img src="assets/imgs/logo-icon/home.png" width="30px" alt=""> Beranda</a>
             <a href="#"><img src="assets/imgs/logo-icon/about.png" width="30px" alt=""> Tentang Wisata</a>
-            <a href="#"><img src="assets/imgs/logo-icon/galeri.png" width="30px" alt=""> Galeri Wisata</a>
+            <a href="#gallery"><img src="assets/imgs/logo-icon/galeri.png" width="30px" alt=""> Galeri Wisata</a>
             <a href="#"><img src="assets/imgs/logo-icon/info.png" width="30px" alt=""> Informasi Praktis</a>
         </div>
         <div class="">
             <div class="navIcon">
-                <a href="#"><img src="assets/imgs/logo-icon/search.png" width="25px" alt=""></a>
-                <a href="#"><img src="assets/imgs/logo-icon/maximize.png" width="25px" alt=""></a>
-                <a href="#"><img src="assets/imgs/logo-icon/indonesia-flag.png" width="25px" alt=""></a>
+                <a href="#"><img src="assets/imgs/logo-icon/search.png" width="20px" alt=""></a>
+                <a onclick="fullScreenImg()" href="#"><img onclick="toggleFullScreen()" id="fullScreen"  src="./assets/imgs/logo-icon/maximize.png" width="20px" alt=""></a>
+                <a href="#"><img src="assets/imgs/logo-icon/indonesia-flag.png" width="20px" alt=""></a>
             </div>
             <div id="resNav" class="">
                 <i class="fa-solid fa-bars"></i>
@@ -47,16 +47,19 @@
                     <i class="fas fa-x"></i>
                 </div>
                 <div class="menus mt-8">
-                    <a href="#Home">Beranda</a>
+                    <a href="#home">Beranda</a>
                     <a href="#Tryout">Tentang Wisata</a>
-                    <a href="#Bimbel">Galeri Wisata</a>
+                    <a href="#gallery">Galeri Wisata</a>
                     <a href="#Testimonial">Informasi Praktis</a>
                 </div>
             </div>
         </div>
     </nav>
     <!-- BERANDA W GAMBAR -->
-    <section class="home-image">
+    <section id="home" class="home-image">
+        <div class="image-home">
+            <img class="" src="./assets/imgs/tempat/kapopposang-drone-view.png" alt="">
+        </div>
         <div class="home-title">
             <h1>KAPOPPOSANG ISLAND</h1>
             <a href="#">Jelajahi</a>
@@ -67,7 +70,7 @@
     <!-- Aktivitas dan Pengalaman Wisata -->
     <!-- AKTIVITAS -->
 
-    <section class="place">
+    <section id="gallery" class="place">
         <div class="place-container">
             <div class="places-header">
                 <h2>
