@@ -162,7 +162,7 @@ h2 {
 .home-image .image-home {
   width: 100%;
 }
-.home-image .image-home img {
+.home-image .image-home video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
