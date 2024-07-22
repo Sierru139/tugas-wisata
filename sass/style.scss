@@ -219,10 +219,13 @@ h2 {
             font-size: 4rem;
             line-height:  110%;
             @media (max-width: $tablet) {
-                font-size: 2.5rem;
+                font-size: 2rem;
+            }
+            @media (max-width: $phone-md) {
+                font-size: 1.75rem;
             }
             @media (max-width: $phone) {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
             }
         }
         a {
