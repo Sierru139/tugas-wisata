@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./sass/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruthie&display=swap" rel="stylesheet">
+</head>
+
 <body>
 
 
     <!-- NAVBAR -->
     <nav class="nav-stuck">
         <div>
-            <!-- <img src="assets/imgs/logo-icon/Kapoposang.png" width="60px" alt=""> -->
-            <h2>Kapoposang</h2>
+            <img src="assets/imgs/logo-icon/kapoposang-logo-svg.svg" alt="">
+            <img src="assets/imgs/logo-icon/Kapoposang.png" alt="">
         </div>
         <div>
             <a href="#"><img src="assets/imgs/logo-icon/search.png" width="30px" alt=""></a>
-            <a onclick="fullScreenImg()" href="#"><img onclick="toggleFullScreen()" id="fullScreen"  src=" assets/imgs/logo-icon/maximize.png" width="30px" alt=""></a>
+            <a onclick="fullScreenImg()" href="#"><img onclick="toggleFullScreen()" id="fullScreen"
+                    src=" assets/imgs/logo-icon/maximize.png" width="30px" alt=""></a>
             <a href="#"><img src="assets/imgs/logo-icon/indonesia-flag.png" width="30px" alt=""></a>
         </div>
     </nav>
-    
 
     <nav class="nav-stick">
         <div>
@@ -35,7 +38,8 @@
         <div class="">
             <div class="navIcon">
                 <a href="#"><img src="assets/imgs/logo-icon/search.png" width="20px" alt=""></a>
-                <a onclick="fullScreenImg()" href="#"><img onclick="toggleFullScreen()" id="fullScreen"  src="./assets/imgs/logo-icon/maximize.png" width="20px" alt=""></a>
+                <a onclick="fullScreenImg()" href="#"><img onclick="toggleFullScreen()" id="fullScreen"
+                        src="./assets/imgs/logo-icon/maximize.png" width="20px" alt=""></a>
                 <a href="#"><img src="assets/imgs/logo-icon/indonesia-flag.png" width="20px" alt=""></a>
             </div>
             <div id="resNav" class="">
@@ -55,6 +59,8 @@
             </div>
         </div>
     </nav>
+
+
     <!-- BERANDA W GAMBAR -->
     <section id="home" class="home-image">
         <div class="image-home">
@@ -66,30 +72,67 @@
         </div>
     </section>
 
-
-    <!-- Aktivitas dan Pengalaman Wisata -->
-    <!-- AKTIVITAS -->
-
-    <section id="gallery" class="place">
-        <div class="place-container">
-            <div class="places-header">
+    <!-- KEINDAHAN ALAM -->
+    <section id="gallery"  class="biodiversity">
+        <div class="container">
+            <div class="section-header">
                 <h2>
                     Pesona Kapopposang
                 </h2>
-                <p>Kapopposang menawarkan berbagai tempat menakjubkan yang menjanjikan pengalaman tak terlupakan. Berikut adalah sekilas tentang apa yang dapat Anda nikmati:</p>
+                <h4>Ekosistem dan Budiversitas</h4>
+                <p>Jelajahi keanekaragaman hayati Pulau Kapoposang, dari terumbu karang yang mempesona hingga hutan tropis yang rimbun, serta flora dan fauna yang unik.</p>
+            </div>
+            <div class="biodiversity-images">
+                <div class="biodiversities">
+                    <img src="./assets/imgs/paket/scuba-diving.webp" alt="">
+                    <h3>Keindahan Bawah Laut</h3>
+                </div>
+                <div class="biodiversities">
+                    <img src="./assets/imgs/paket/scuba-diving.jpg" alt="">
+                    <h3>Keragaman Hayati Laut</h3>
+                </div>
+                <div class="biodiversities">
+                    <img src="./assets/imgs/gallery/img_00252.jpg" alt="">
+                    <h3>Konservasi dan Pelestarian</h3>
+                </div>
+                <div class="biodiversities">
+                    <img src="./assets/imgs/biodiversitas/tanam-mangrove.jpg" alt="">
+                    <h3>Kegiatan Edukasi Tur Ekosistem</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- AKTIVITAS -->
+    <!-- Aktivitas dan Pengalaman Wisata -->
+
+    <section class="place">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    Pesona Kapopposang
+                </h2>
+                <h4>Aktivitas Wisata</h4>
+                <p>Kapopposang menawarkan berbagai tempat menakjubkan yang menjanjikan pengalaman tak terlupakan.
+                    Berikut adalah sekilas tentang apa yang dapat Anda nikmati:</p>
             </div>
             <div class="places-images">
                 <div class="places">
-                    <img class="images" src="https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img class="images" src="./assets/imgs/tempat/dermaga.webp" alt="">
                     <div class="places-exp">
                         <div style="width: 300px;">
-                            <h3>Banana Beach Pool</h3>
-                            <p>Sebuah pulau tropis dengan pantai berpasir putih, restoran tepi laut, dan perairan jernih untuk berenang.</p>
+                            <h3>Dock</h3>
+                            <p>Sebuah pulau tropis yang memiliki dermaga yang panjang dengan pantai berpasir putih,
+                                restoran tepi laut, dan perairan jernih
+                                untuk berenang.</p>
                         </div>
                     </div>
                 </div>
                 <div class="places">
-                    <img class="images" src="https://images.pexels.com/photos/131925/pexels-photo-131925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img class="images"
+                        src="https://images.pexels.com/photos/131925/pexels-photo-131925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
                     <div class="places-exp">
                         <div style="width: 300px;">
                             <h3>Tempat Makan</h3>
@@ -102,7 +145,8 @@
                     <div class="places-exp">
                         <div style="width: 300px;">
                             <h3>Terumbu Karang</h3>
-                            <p>Terumbu karang yang indah, rumah banyak ikan, tempat yang dilestarikan penduduk setempat.</p>
+                            <p>Terumbu karang yang indah, rumah banyak ikan, tempat yang dilestarikan penduduk setempat.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -111,12 +155,15 @@
                     <div class="places-exp">
                         <div style="width: 300px;">
                             <h3>Kolam Renang</h3>
-                            <p>Sebuah pulau tropis dengan pantai berpasir putih, restoran tepi laut, dan perairan jernih untuk berenang.</p>
+                            <p>Sebuah pulau tropis dengan pantai berpasir putih, restoran tepi laut, dan perairan jernih
+                                untuk berenang.</p>
                         </div>
                     </div>
                 </div>
                 <div class="places">
-                    <img class="images" src="https://images.pexels.com/photos/6510403/pexels-photo-6510403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <img class="images"
+                        src="https://images.pexels.com/photos/6510403/pexels-photo-6510403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
                     <div class="places-exp">
                         <div style="width: 300px;">
                             <h3>Cafe</h3>
@@ -127,17 +174,18 @@
             </div>
         </div>
     </section>
-    
+
     <!-- PAKET WISATA -->
     <section class="benefit">
-        <div class="benefit-header">
-            <h2>
+        <div class="section-header">
+            <!-- <h2>
                 Aktivitas Seru yang Bisa Dilakukan
-            </h2>
+            </h2> -->
+            <h4>Paket Wisata</h4>
             <p>Nikmati Petualangan Seru di Kapopposang Ada banyak hal seru yang bisa Anda lakukan di sini!</p>
         </div>
-        <div class="benefit-container swiper">
 
+        <div class="benefit-container swiper">
             <div class="benefit-cards swiper-wrapper">
                 <div class="cards swiper-slide">
                     <div class="card-image">
@@ -152,7 +200,8 @@
                 <div class="cards swiper-slide">
                     <div class="card-image">
                         <h3>Water Pool</h3>
-                        <img src="https://images.pexels.com/photos/261101/pexels-photo-261101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <img src="https://images.pexels.com/photos/261101/pexels-photo-261101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
                     </div>
                     <div class="card-detail">
                         <p>Selama penyewaan kamar</p>
@@ -172,7 +221,8 @@
                 <div class="cards swiper-slide">
                     <div class="card-image">
                         <h3>Rent Room</h3>
-                        <img src="https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <img src="https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
                     </div>
                     <div class="card-detail">
                         <p>1 Hari</p>
@@ -182,7 +232,8 @@
                 <div class="cards swiper-slide">
                     <div class="card-image">
                         <h3>Speed Boat</h3>
-                        <img src="https://images.pexels.com/photos/5463569/pexels-photo-5463569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <img src="https://images.pexels.com/photos/5463569/pexels-photo-5463569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
                     </div>
                     <div class="card-detail">
                         <p>3 Hari 18 Jam</p>
@@ -192,18 +243,20 @@
                 <div class="cards swiper-slide">
                     <div class="card-image">
                         <h3>Dining Room</h3>
-                        <img src="https://images.pexels.com/photos/3660229/pexels-photo-3660229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <img src="https://images.pexels.com/photos/3660229/pexels-photo-3660229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
                     </div>
                     <div class="card-detail">
                         <p>3 Hari 18 Jam</p>
                         <a href="#">Rp. 95.000</a>
                     </div>
                 </div>
-                
+
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
 </body>
+
 </html>
 <script src="./script.js"></script>
