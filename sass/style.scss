@@ -303,14 +303,12 @@ h2 {
     background-repeat: repeat-x;
     .container {
         .biodiversity-images {
-            @media (max-width: $tablet) {
+            @media (max-width: $phone-md) {
                 grid-template-areas: 
                 'first first'
                 'first first'
                 'second third'
                 'second third'
-                'fourth fourth'
-                'fourth fourth'
                 'fourth fourth'
                 'fourth fourth'
                 ;
@@ -378,6 +376,83 @@ h2 {
         }
     }
 }
+
+// pemandangan alam
+.panorama {
+    .container {
+        .panorama-images {
+            @media (max-width: $tablet) {
+            height: 420px;
+            grid-template-areas: 
+                'first first second second'
+                'third third fifth fifth'
+                'fourth fourth fifth fifth'
+                ;
+        }
+            grid-template-areas: 
+                'first second second third '
+                'fourth fourth fifth fifth'
+                ;
+            display: grid;
+            gap: 4px;
+            width: 100%;
+            height: 520px;
+            .panoramas {
+                border-radius: 15px;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                &:nth-child(1) {
+                    grid-area: first;
+                }
+                &:nth-child(2) {
+                    grid-area: second;
+                }
+                &:nth-child(3) {
+                    grid-area: third;
+                }
+                &:nth-child(4) {
+                    grid-area: fourth;
+                }
+                &:nth-child(5) {
+                    grid-area: fifth;
+                }
+                &::before {
+                    content: '';
+                    height: 50%;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+                    z-index: 0;
+                }
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                }
+                h3 {
+                    padding: 8px;
+                    z-index: 1;
+                    color: white;
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    @media (max-width: $tablet) {
+                        padding: 6px;
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 // AKTIVITAS
 
@@ -546,32 +621,28 @@ h2 {
 }
 
 .resGoDown {
-    animation: navRespoLeft .3s linear;
+    animation: navRespoLeft .8s cubic-bezier(0,.06,0,1.28);
 }
 
 @keyframes navRespoLeft {
     0% {
         transform: translateX(100%);
-        opacity: 0;
     }
 
     100% {
         transform: translateX(0);
-        opacity: 1;
     }
 }
 
 .nav-close {
-    animation: nav-close 1s ease;
+    animation: nav-close .8s cubic-bezier(.97,-0.29,1,.93);
 }
 
 @keyframes nav-close {
     0% {
         transform: translateX(0);
-        opacity: 1;
     }
     100% {
         transform: translateX(100%);
-        opacity: 0;
     }
 }
