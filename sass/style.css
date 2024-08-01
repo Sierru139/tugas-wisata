@@ -499,19 +499,16 @@ h2 {
   position: relative;
   flex-grow: 0;
   flex-shrink: 0;
-  height: 660px;
+  height: 360px;
 }
 @media (max-width: 420px) {
   .benefit .benefit-container .benefit-cards .cards {
-    height: 460px;
+    height: 260px;
   }
-}
-.benefit .benefit-container .benefit-cards .cards:nth-child(even) {
-  justify-content: end;
 }
 .benefit .benefit-container .benefit-cards .cards .card-image {
   position: relative;
-  height: 70%;
+  height: 60%;
 }
 .benefit .benefit-container .benefit-cards .cards .card-image h3 {
   position: absolute;
@@ -543,6 +540,7 @@ h2 {
   background: linear-gradient(0deg, #000080 0%, rgba(0, 0, 128, 0) 100%);
 }
 .benefit .benefit-container .benefit-cards .cards .card-detail {
+  height: 40%;
   padding: 1rem 0;
 }
 .benefit .benefit-container .benefit-cards .cards .card-detail p {
@@ -551,6 +549,7 @@ h2 {
 .benefit .benefit-container .benefit-cards .cards .card-detail a {
   background-color: wheat;
   padding: 0.5rem 1rem;
+  font-size: 12px;
 }
 
 .goDown {

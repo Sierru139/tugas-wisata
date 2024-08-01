@@ -547,17 +547,14 @@ h2 {
                 flex-grow: 0;
                 flex-shrink: 0;
                 // / width: 400px; /
-                height: 660px;
+                height: 360px;
                 @media (max-width: $phone) {
-                    height: 460px;
-                }
-                &:nth-child(even) {
-                    justify-content: end;
+                    height: 260px;
                 }
                 
                 .card-image {
                     position: relative;
-                    height: 70%;
+                    height: 60%;
                     h3 {
                         position: absolute;
                         display: inline-block;
@@ -589,6 +586,7 @@ h2 {
                     }
                 }
                 .card-detail {
+                    height: 40%;
                     padding: 1rem 0;
                     p {
                         margin-bottom: 1rem;
@@ -597,6 +595,7 @@ h2 {
                     a {
                         background-color: wheat;
                         padding: 0.5rem 1rem;
+                        font-size: 12px;
                     }
                 }
             }
