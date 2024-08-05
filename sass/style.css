@@ -30,6 +30,16 @@ h2 {
   color: #527853;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #F28545 !important;
+}
+
+.swiper-pagination-bullet {
+  padding: 0.3rem;
+  background-color: rgba(255, 0, 0, 0);
+  border: 2px solid #F28545;
+}
+
 .container {
   max-width: 1280px;
   height: 100%;
