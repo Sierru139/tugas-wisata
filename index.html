@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/imgs/logo-icon/kapoposang-logo-svg.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruthie&display=swap"
+        rel="stylesheet">
+    <title>Kapoposang</title>
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <nav class="nav-stuck">
+        <div>
+            <img style="filter: drop-shadow(0 0 1px black);" src="assets/imgs/logo-icon/kapoposang-logo-svg.svg" alt="">
+            <img style="filter: drop-shadow(0 0 1px black);" src="assets/imgs/logo-icon/Kapoposang.png" alt="">
+        </div>
+        <div>
+            <a href="#"><img src="assets/imgs/logo-icon/search.png" width="30px" alt=""></a>
+            <a onclick="fullScreenImg()" href="#"><img onclick="toggleFullScreen()" id="fullScreen"
+                    src=" assets/imgs/logo-icon/maximize.png" width="30px" alt=""></a>
+            <a href="#"><img src="assets/imgs/logo-icon/indonesia-flag.png" width="30px" alt=""></a>
+        </div>
+    </nav>
+
+    <nav class="nav-stick">
+        <div>
+            <a href="#home"><img src="assets/imgs/logo-icon/home.png" width="30px" alt=""> Beranda</a>
+            <a href="#"><img src="assets/imgs/logo-icon/about.png" width="30px" alt=""> Tentang Wisata</a>
+            <a href="#gallery"><img src="assets/imgs/logo-icon/galeri.png" width="30px" alt=""> Galeri Wisata</a>
+            <a href="#"><img src="assets/imgs/logo-icon/info.png" width="30px" alt=""> Informasi Praktis</a>
+        </div>
+        <div class="">
+            <div class="navIcon">
+                <a href="#"><img src="assets/imgs/logo-icon/search.png" width="20px" alt=""></a>
+                <a onclick="fullScreenImg()" href="#"><img onclick="toggleFullScreen()" id="fullScreen"
+                        src="./assets/imgs/logo-icon/maximize.png" width="20px" alt=""></a>
+                <a href="#"><img src="assets/imgs/logo-icon/indonesia-flag.png" width="20px" alt=""></a>
+            </div>
+            <div id="resNav" class="">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita porro distinctio voluptas eaque, possimus ex veritatis illum rerum, alias, omnis cum corrupti adipisci maxime fugit debitis. Dolore, fugit illo.</p> -->
+            </div>
+            <div id="resMenu" class="resGoDown">
+                <div id="resNavClose" class="inline absolute rounded-md right-5">
+                    <i class="fas fa-x" style="color: white;"></i>
+                </div>
+                <div class="menus mt-8">
+                    <a href="#home">Beranda</a>
+                    <a href="#Tryout">Tentang Wisata</a>
+                    <a href="#gallery">Galeri Wisata</a>
+                    <a href="#Testimonial">Informasi Praktis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- BERANDA W GAMBAR -->
+    <section id="home" class="home-image">
+        <div class="image-home">
+            <video src="./assets/imgs/tempat/video-homepage.mp4" autoplay muted loop></video>
+        </div>
+        <div class="home-title">
+            <h1>KAPOPPOSANG ISLAND</h1>
+            <a href="#">Jelajahi</a>
+        </div>
+    </section>
+
+    <!-- KEINDAHAN ALAM -->
+    <section id="gallery" class="biodiversity">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    Pesona Kapopposang
+                </h2>
+                <h4>Ekosistem dan Budiversitas</h4>
+                <p>Jelajahi keanekaragaman hayati Pulau Kapoposang, dari terumbu karang yang mempesona hingga hutan
+                    tropis yang rimbun, serta flora dan fauna yang unik.</p>
+            </div>
+            <div class="biodiversity-images">
+                <div class="biodiversities">
+                    <img src="./assets/imgs/paket/scuba-diving.webp" alt="">
+                    <h3>Keindahan Bawah Laut</h3>
+                </div>
+                <div class="biodiversities">
+                    <img src="./assets/imgs/paket/scuba-diving.jpg" alt="">
+                    <h3>Keragaman Hayati Laut</h3>
+                </div>
+                <div class="biodiversities">
+                    <img src="./assets/imgs/gallery/img_00252.jpg" alt="">
+                    <h3>Konservasi dan Pelestarian</h3>
+                </div>
+                <div class="biodiversities">
+                    <img src="./assets/imgs/biodiversitas/tanam-mangrove.jpg" alt="">
+                    <h3>Kegiatan Edukasi Tur Ekosistem</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="panorama">
+        <div class="container">
+            <div class="section-header">
+                <h4>Ekosistem dan Budiversitas</h4>
+                <p>Jelajahi keanekaragaman hayati Pulau Kapoposang, dari terumbu karang yang mempesona hingga hutan
+                    tropis yang rimbun, serta flora dan fauna yang unik.</p>
+            </div>
+            <div class="panorama-images">
+                <div class="panoramas">
+                    <img src="./assets/imgs/paket/scuba-diving.webp" alt="">
+                    <h3>Keindahan Bawah Laut</h3>
+                </div>
+                <div class="panoramas">
+                    <img src="./assets/imgs/paket/scuba-diving.jpg" alt="">
+                    <h3>Keragaman Hayati Laut</h3>
+                </div>
+                <div class="panoramas">
+                    <img src="./assets/imgs/gallery/img_00252.jpg" alt="">
+                    <h3>Konservasi dan Pelestarian</h3>
+                </div>
+                <div class="panoramas">
+                    <img src="./assets/imgs/biodiversitas/tanam-mangrove.jpg" alt="">
+                    <h3>Kegiatan Edukasi Tur Ekosistem</h3>
+                </div>
+                <div class="panoramas">
+                    <img src="./assets/imgs/biodiversitas/tanam-mangrove.jpg" alt="">
+                    <h3>Kegiatan Edukasi Tur Ekosistem</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- AKTIVITAS -->
+    <!-- PAKET WISATA -->
+    <!-- Aktivitas dan Pengalaman Wisata -->
+
+    <section class="place">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    Pesona Kapopposang
+                </h2>
+                <h4>Aktivitas Wisata</h4>
+                <p>Kapopposang menawarkan berbagai tempat menakjubkan yang menjanjikan pengalaman tak terlupakan.
+                    Berikut adalah sekilas tentang apa yang dapat Anda nikmati:</p>
+            </div>
+            <div class="places-images">
+                <div class="places">
+                    <img class="images" src="./assets/imgs/gallery/dermaga.webp" alt="">
+                    <div class="places-exp">
+                        <div style="width: 300px;">
+                            <h3>Dock</h3>
+                            <p>Sebuah pulau tropis yang memiliki dermaga yang panjang dengan pantai berpasir putih,
+                                restoran tepi laut, dan perairan jernih
+                                untuk berenang.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="places">
+                    <img class="images"
+                        src="https://images.pexels.com/photos/131925/pexels-photo-131925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <div class="places-exp">
+                        <div style="width: 300px;">
+                            <h3>Tempat Makan</h3>
+                            <p>Restoran Pinggir Pantai dengan Makanan Lezat dan Pemandangan Menakjubkan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="places">
+                    <img class="images" src="./assets/imgs/tempat/terumbu-karang.webp" alt="">
+                    <div class="places-exp">
+                        <div style="width: 300px;">
+                            <h3>Terumbu Karang</h3>
+                            <p>Terumbu karang yang indah, rumah banyak ikan, tempat yang dilestarikan penduduk setempat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="places">
+                    <img class="images" src="./assets/imgs/tempat/kolam-renang.jpeg" alt="">
+                    <div class="places-exp">
+                        <div style="width: 300px;">
+                            <h3>Kolam Renang</h3>
+                            <p>Sebuah pulau tropis dengan pantai berpasir putih, restoran tepi laut, dan perairan jernih
+                                untuk berenang.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="places">
+                    <img class="images"
+                        src="https://images.pexels.com/photos/6510403/pexels-photo-6510403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <div class="places-exp">
+                        <div style="width: 300px;">
+                            <h3>Cafe</h3>
+                            <p>Nikmati kopi saat waktu senja di tepi pantai, nikmat tak terbatas menunggu anda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefit">
+        <div class="section-header">
+            <!-- <h2>
+                Aktivitas Seru yang Bisa Dilakukan
+            </h2> -->
+            <h4>Paket Wisata</h4>
+            <p>Nikmati Petualangan Seru di Kapopposang Ada banyak hal seru yang bisa Anda lakukan di sini!</p>
+        </div>
+
+        <div class="benefit-container swiper">
+            <div class="benefit-cards swiper-wrapper">
+                <div class="cards swiper-slide">
+                    <div class="card-image">
+                        <img src="./assets/imgs/paket/scuba-diving.jpg" alt="">
+                    </div>
+                    <div class="card-detail">
+                        <div>
+                            <div style="color: gold;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Paket Liburan Keluarga</h3>
+                        </div>
+                        <div>
+                            <p><i class="far fa-calendar"></i> Days: 5</p>
+                            <p><i class="fas fa-user"></i> People: 8</p>
+                        </div>
+                        <div>
+                            <a href="#">Rp. 75.000</a>
+                            <a href="#">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards swiper-slide">
+                    <div class="card-image">
+                        <img src="./assets/imgs/gallery/kolam.jpg" alt="">
+                    </div>
+                    <div class="card-detail">
+                        <div>
+                            <div style="color: gold;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Paket Petualangan Bahari</h3>
+                        </div>
+                        <div>
+                            <p><i class="far fa-calendar"></i> Days: 5</p>
+                            <p><i class="fas fa-user"></i> People: 8</p>
+                        </div>
+                        <div>
+                            <a href="#">Free</a>
+                            <a href="#">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards swiper-slide">
+                    <div class="card-image">
+                        <img src="./assets/imgs/paket/scuba-diving.webp" alt="">
+                    </div>
+                    <div class="card-detail">
+                        <div>
+                            <div style="color: gold;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Paket Ekowisata dan Budaya</h3>
+                        </div>
+                        <div>
+                            <p><i class="far fa-calendar"></i> Days: 5</p>
+                            <p><i class="fas fa-user"></i> People: 8</p>
+                        </div>
+                        <div>
+                            <a href="#">Rp. 55.000</a>
+                            <a href="#">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards swiper-slide">
+                    <div class="card-image">
+                        <img src="./assets/imgs/gallery/kamar.jpg" alt="">
+                    </div>
+                    <div class="card-detail">
+                        <div>
+                            <div style="color: gold;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Rent Room</h3>
+                        </div>
+                        <div>
+                            <p><i class="far fa-calendar"></i> Days: 5</p>
+                            <p><i class="fas fa-user"></i> People: 8</p>
+                        </div>
+                        <div>
+                            <a href="#">Rp. 95.000 - 320.000</a>
+                            <a href="#">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards swiper-slide">
+                    <div class="card-image">
+                        <img src="./assets/imgs/gallery/speed boat.jpg" alt="">
+                    </div>
+                    <div class="card-detail">
+                        <div>
+                            <div style="color: gold;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Speed Boat</h3>
+                        </div>
+                        <div>
+                            <p><i class="far fa-calendar"></i> Days: 5</p>
+                            <p><i class="fas fa-user"></i> People: 8</p>
+                        </div>
+                        <div>
+                            <a href="#">Rp. 95.000</a>
+                            <a href="#">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards swiper-slide">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/3660229/pexels-photo-3660229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="card-detail">
+                        <div>
+                            <div style="color: gold;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Dining Room</h3>
+                        </div>
+                        <div>
+                            <p><i class="far fa-calendar"></i> Days: 5</p>
+                            <p><i class="fas fa-user"></i> People: 8</p>
+                        </div>
+                        <div>
+                            <a href="#">Rp. 95.000</a>
+                            <a href="#">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="communities">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    Masyarakat Lokal
+                </h2>
+                <h4>Komunitas Lokal</h4>
+                <p>Mengenal lebih dekat kehidupan masyarakat Pulau Kapoposang, kearifan lokal, dan kuliner khas yang
+                    memikat.</p>
+            </div>
+
+            <div class="communities-gallery">
+                <div>
+                    <div class="img-gallery">
+                        <img src="assets/imgs/biodiversitas/tanam-mangrove.jpg" alt="">
+                    </div>
+                    <div class="img-gallery">
+                        <h3>Kehidupan Sehari Hari</h3>
+                        <p>Masyarakat lokal berkumpul dan berfoto bersama, menunjukkan kebersamaan dan kekuatan ikatan
+                            komunitas di Pulau Kapoposang.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-gallery">
+                        <img src="./assets/imgs/gallery/img_4442.jpg" alt="">
+                    </div>
+                    <div class="img-gallery">
+                        <h3>Kehidupan Sehari Hari</h3>
+                        <p>Penduduk lokal bekerja sama di atas perahu, menjalankan aktivitas memancing yang merupakan
+                            sumber penghidupan utama bagi masyarakat di Pulau Kapoposang.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-gallery">
+                        <img src="./assets/imgs/gallery/img_0024.jpg" alt="">
+                    </div>
+                    <div class="img-gallery">
+                        <h3>Peran dan Pelestarian</h3>
+                        <p>Masyarakat Pulau Kapoposang bersama-sama menanam pohon di tepi pantai, menyoroti komitmen
+                            mereka terhadap pelestarian lingkungan dan semangat gotong royong yang kuat dalam menjaga
+                            keindahan alam pulau.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lproduct">
+        <div class="container">
+            <div class="section-header">
+                <h4>Produk Lokal dan Kuliner</h4>
+                <p>Pulau Kapoposang menawarkan kerajinan tangan unik dan kuliner khas yang mencerminkan kekayaan budaya
+                    lokal. Nikmati hasil karya seni dan masakan tradisional yang autentik saat berkunjung.</p>
+            </div>
+            <div class="lproduct-images">
+                <div class="lproducts">
+                    <img class="images" src="./assets/imgs/tempat/kapopposang-drone-view.png" alt="">
+                    <div class="lproduct-exp">
+                        <div>
+                            <h3>Kerajinan Tangan</h3>
+                            <p>Nelayan Memainkan Pancingan Lutfinya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lproducts">
+                    <img class="images"
+                        src="https://images.pexels.com/photos/131925/pexels-photo-131925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <div class="lproduct-exp">
+                        <div style="width: 300px;">
+                            <h3>Makanan Khas</h3>
+                            <p>Bapak Bapak Pengurus Rohis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lproducts">
+                    <img class="images" src="./assets/imgs/tempat/terumbu-karang.webp" alt="">
+                    <div class="lproduct-exp">
+                        <div style="width: 300px;">
+                            <h3>Festival dan Acara Budaya</h3>
+                            <p>Nelayan Memainkan Pancingan Lutfinya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 style="text-align: center; max-width: 480px; margin: 0 auto;">LAGI DALAM PROGRESS, MOHON TUNGGU UPDATE-NYA
+        🙏🙏🙏🙏🙏🙏</h1>
+</body>
+
+</html>
+<script src="./script.js"></script>
