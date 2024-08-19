@@ -759,6 +759,133 @@ h2 {
      object-position: center;
 }
 
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.show {
+  max-height: 200px;
+}
+
+.arrow-rotate {
+  rotate: -90deg;
+  transition: 0.4s;
+}
+
+.arrow-rotated {
+  rotate: 0deg;
+}
+
+.flex-half {
+  display: flex;
+  gap: 0.75rem;
+}
+@media (max-width: 880px) {
+  .flex-half {
+    flex-direction: column;
+  }
+}
+.flex-half .info-frame {
+  flex: 1;
+}
+.flex-half .info-frame .map-frame {
+  width: 100%;
+  height: 20rem;
+}
+.flex-half .info-frame .asker {
+  width: 100%;
+  margin-bottom: 4px;
+}
+.flex-half .info-frame .asker .asker-ttl {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  /* justify-content: center; */
+  position: relative;
+}
+.flex-half .info-frame .asker .asker-ttl h4 {
+  padding-bottom: 1rem;
+  display: block;
+  width: 90%;
+  border-bottom: 1px solid #BE5210;
+  font-size: 1rem;
+}
+@media (max-width: 580px) {
+  .flex-half .info-frame .asker .asker-ttl h4 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+.flex-half .info-frame .asker .asker-ttl .arrowww {
+  color: black;
+  text-align: right;
+  width: 1rem;
+  position: absolute;
+  right: 2rem;
+}
+@media (max-width: 580px) {
+  .flex-half .info-frame .asker .asker-ttl .arrowww {
+    width: 0.5rem;
+  }
+}
+.flex-half .info-frame .asker .answer-info {
+  width: 100%;
+}
+.flex-half .info-frame .asker .answer-info ul {
+  list-style-type: none;
+  padding: 1rem 1.5rem;
+}
+@media (max-width: 580px) {
+  .flex-half .info-frame .asker .answer-info ul {
+    padding: 1rem 3rem;
+  }
+}
+.flex-half .info-frame .asker .answer-info ul li {
+  font-size: 1rem;
+}
+@media (max-width: 580px) {
+  .flex-half .info-frame .asker .answer-info ul li {
+    font-size: 0.75rem;
+  }
+}
+.flex-half .form-q {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.flex-half .form-q h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.flex-half .form-q input {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  padding: 1rem 0.75rem;
+  border: none;
+  background-color: none;
+}
+.flex-half .form-q textarea {
+  margin-bottom: 0.5rem;
+  flex-grow: 1;
+  width: 100%;
+  border: none;
+  background-color: none;
+}
+.flex-half .form-q button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  cursor: pointer;
+  background-color: #F7B787;
+  transition: 0.4s;
+}
+.flex-half .form-q button:hover {
+  background-color: #F28545;
+  color: white;
+}
+
 .goDown {
   animation: navDown 0.5s ease;
 }
