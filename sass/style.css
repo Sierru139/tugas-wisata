@@ -499,6 +499,7 @@ h2 {
   margin: 0 auto;
 }
 .benefit .benefit-container .benefit-cards {
+  cursor: grab;
   width: 100%;
   display: flex;
   padding-bottom: 2.5rem;
