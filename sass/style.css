@@ -282,11 +282,107 @@ h2 {
   }
 }
 
-.biodiversity {
+.about {
   background-image: url("../assets/imgs/logo-icon/fade.png");
   background-position: top;
   background-repeat: repeat-x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 880px) {
+  .about .container {
+    flex-direction: column-reverse;
+  }
+}
+.about .container .itemses {
+  display: flex;
+  flex: 0 0 40%;
+}
+.about .container .itemses .img-itemses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 4px;
+}
+@media (max-width: 880px) {
+  .about .container .itemses .img-itemses {
+    padding: 1rem;
+  }
+}
+.about .container .itemses .img-itemses .img-ses {
+  position: relative;
+  width: 14rem;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 9999px;
+}
+@media (max-width: 880px) {
+  .about .container .itemses .img-itemses .img-ses {
+    width: 10rem;
+  }
+}
+.about .container .itemses .img-itemses .img-ses:nth-child(1) {
+  height: 18rem;
+  background-image: url("../assets/imgs/gallery/img_3895.jpg");
+}
+@media (max-width: 880px) {
+  .about .container .itemses .img-itemses .img-ses:nth-child(1) {
+    height: 14rem;
+  }
+}
+.about .container .itemses .img-itemses .img-ses:nth-child(2) {
+  height: 24rem;
+  background-image: url("../assets/imgs/gallery/img_3895.jpg");
+}
+@media (max-width: 880px) {
+  .about .container .itemses .img-itemses .img-ses:nth-child(2) {
+    height: 18rem;
+  }
+}
+.about .container .itemses .img-itemses .img-ses:nth-child(2) img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.about .container .explain-ses {
+  flex: 0 0 60%;
+}
+.about .container .explain-ses h1 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+.about .container .explain-ses p {
+  text-align: justify;
+}
+.about .container .explain-ses .rating-ses {
+  display: flex;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+.about .container .explain-ses .rating-ses span {
+  font-size: 20px;
+}
+.about .container .explain-ses .rating-ses span:nth-child(1) {
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 6px;
+}
+.about .container .explain-ses .rating-ses span:nth-child(2) {
+  margin-right: 1rem;
+}
+.about .container .explain-ses .rating-ses .stars {
+  color: gold;
+  font-size: 1.4rem;
+}
+
 .biodiversity .container .biodiversity-images {
   display: grid;
   grid-template-areas: "first first fourth fourth" "first first fourth fourth" "second third fourth fourth" "second third fourth fourth";
